@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/Generic.css">
+  <link rel="stylesheet" href="css/users.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script src="js/logged_in.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/side_menu.js"></script>
+  <script src="js/users.js"></script>
+     <script src="js/getRole.js"></script>
+  
+ <script>
+ // Only Admin can access this page
+  blacklist=new Set(["WRITER","PREMIUM","USER"]);
+  getRole(blacklist);
+  </script>
+</head>
+<body>
+<div id="menu_placeholder"></div>
+   <header>
+
+  	<div id="header_placeholder"></div>
+
+    </header>
+  <form id="userForm">    User List
+  
+<div id="Table_Container">
+
+    <!-- Table Section -->
+      <table id="FormTable">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th> 
+            <th>Phone</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    
+    <div class="button-container">
+  <button id="formbutton" type="submit" >Search</button>
+  </div>
+</form>
+<!-- Footer Section -->
+<footer>
+                 	<div id="footer_placeholder"></div>
+
+</footer>
+
+
+</body>
+</html>

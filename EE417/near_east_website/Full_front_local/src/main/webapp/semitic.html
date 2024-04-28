@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/Generic.css">
+    <title>Afroasiatic Languages</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .body-section {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 20px 0 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        article {
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        .headline {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .written-by {
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+        }
+
+        .share-button {
+            color: #000000;
+            text-align: center;
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgb(136, 136, 136, 0.4);
+            margin-left: 20px;
+        }
+
+        .share-button:hover {
+            color: #000000;
+            background-color: #CB7338;
+            text-align: center;
+        }
+
+        .headline-image {
+            max-width: 100%;
+            width: 500px;
+            height: auto;
+            margin-top: 20px;
+            float: right;
+        }
+
+        .paragraph-introduction {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .smaller-headline {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+/* Bullet Point Formatting for numerating Paragraphs */
+        .bullet-points {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+	 <script src="js/logged_in.js"></script>
+  	 <script src="js/common.js"></script>
+  	 <script src="js/side_menu.js"></script>
+	 <script src="js/new_article.js"></script>
+	    <script src="js/getRole.js"></script>
+	 
+	 <script>
+	    //User not allowed to access this page
+
+	  blacklist=new Set(["USER"]);
+	  getRole(blacklist);
+
+  </script>
+</head>
+<body>
+    <div id="menu_placeholder"></div>
+   <header>
+
+  	<div id="header_placeholder"></div>
+
+    </header>
+    <div class="body-section">
+        <article>
+<!-- Example of paragraph with bullet points and enumeration -->
+            <div class="headline">Exploring Afroasiatic Languages: A Linguistic Tapestry</div>
+            <div class="written-by">Written by: Yara Linguista
+                <div class="share-button">Share</div>
+                <br>Published 07/12/2023
+            </div>
+    
+            <img src="images/sem.jpg" alt="Semitic Languages" class="headline-image">
+    
+            <p class="paragraph-introduction">
+                The Afroasiatic language family is a vast and diverse linguistic tapestry that spans across Africa and Western Asia. This article delves into the intricate branches of Afroasiatic languages, each with its unique features and cultural significance.
+            </p>
+    
+            <div class="smaller-headline">1. Semitic Languages</div>
+            <p class="bullet-points">
+                <ul>
+                    <li>Widely spoken in the Middle East and North Africa.</li>
+                    <li>Major languages include Arabic, Hebrew, Amharic, and more.</li>
+                    <li>Known for their historical significance in religious texts like the Quran and the Bible.</li>
+                    <li>Contributes to the rich cultural and linguistic heritage of the region.</li>
+                </ul>
+            </p>
+    
+            <p class="additional-paragraph">
+                Semitic languages form a significant branch of the Afroasiatic family, encompassing a diverse array of languages spoken in the Middle East and North Africa. Notable among them are Arabic, known for its widespread use and cultural influence, and Hebrew, a language with profound religious significance in Judaism. Amharic, the official language of Ethiopia, adds to the linguistic richness of the Semitic branch.
+            </p>
+    
+            <div class="smaller-headline">2. Arabic: A Language of Rich Heritage</div>
+            <p class="additional-paragraph">
+                Arabic stands out as one of the most widely spoken Semitic languages, with over 310 million native speakers. Its influence extends beyond linguistic boundaries, playing a crucial role in Islamic literature, philosophy, and science. The Arabic script, known for its elegant calligraphy, is an art form in itself. Dialectal variations across regions add depth to the language's cultural tapestry.
+            </p>
+    
+            <div class="smaller-headline">3. Hebrew: A Language of Scriptures</div>
+            <p class="additional-paragraph">
+                Hebrew holds a unique place in the Semitic family as the language of the Hebrew Bible (Tanakh) and sacred texts of Judaism. Historically revived in the late 19th century, Modern Hebrew is the official language of Israel. Beyond its religious importance, Hebrew is a living language, evolving to express contemporary ideas and concepts.
+            </p>
+    
+            <div class="smaller-headline">4. Amharic: Ethiopia's Linguistic Gem</div>
+            <p class="additional-paragraph">
+                Amharic, an official language of Ethiopia, boasts over 32 million speakers. It serves as a unifying force in a country known for its linguistic diversity. Amharic's unique script and linguistic characteristics contribute to Ethiopia's rich cultural identity, making it an integral part of the Semitic language legacy.
+            </p>
+        </article>
+    </div>
+    
+    
+    <footer>
+                      	<div id="footer_placeholder"></div>
+
+    </footer>
+
+</body>
+</html>

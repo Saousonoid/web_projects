@@ -1,0 +1,37 @@
+
+    <div id="Ham_Button" onclick="toggleMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+<!-- The overlay div for the background when the menu is open -->
+<div class="overlay" id="overlay"></div>
+<!-- The navigation menu -->
+<nav class="menu" id="menu">
+    <!-- Home link -->
+    <div class="dropdown"><a href="index.html">Home</a></div>
+  
+    <!-- Articles link -->
+    <div class="dropdown"><a href="recent_articles.html">Recent Articles</a></div>
+    <div class="dropdown"><a href="gallery.html">Photo Gallery</a></div> 
+    <div class="dropdown" id="add_article" ><a href="new_article.html">New Article</a></div>
+	<div class="dropdown">
+        <a class="arr"  onclick="unfold(this)">History of The Near East</a>
+        <div class="dropdown-content"><a href="east-mid.html">Cultures of the East Mediterranean</a></div>
+    </div>
+	<div class="dropdown" id="premium_content" >
+	            <a class="arr"  onclick="unfold(this)">UNESCO and Intangible Cultural Heritage</a>
+	            <div class="dropdown-content">
+	                <a href="alpha.html">The Origins of the Alphabet</a>
+	                <a href="semitic.html">Afroasiatic Languages</a>
+	            </div>
+    </div>    
+    <div class="dropdown" id="article_list" ><a href="article_list.html">Article List</a></div>
+    <div class="dropdown">
+    <a class="account" id="manage" onclick="unfold(this)" >Manage</a>
+	    <div class="dropdown-content">
+		    <a id="article_info" href="article_info.html">Article Information</a>
+		    <a id="user_info" href="user_list.html">User Information</a>	    
+	  	 </div>
+    </div>  
+  </nav>

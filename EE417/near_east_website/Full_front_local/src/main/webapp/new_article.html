@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/Generic.css">
+  <link rel="stylesheet" href="css/new_article.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script src="js/logged_in.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/side_menu.js"></script>
+  <script src="js/new_article.js"></script>
+  <script src="js/getRole.js"></script> 
+   <script>
+   // Only WRITER and ADMIN can acces this page
+  blacklist=new Set(["PREMIUM","USER"]);
+	getRole(blacklist);
+  </script>
+</head>
+<body>
+  <div id="menu_placeholder"></div>
+   <header>
+
+  	<div id="header_placeholder"></div>
+
+    </header>
+<form id="ArticleForm">
+  <h1 style="text-align: center; color: rgb(199, 115, 56);">New Article</h1>
+
+  <label for="titleInput">Title:</label>
+  <br>
+  <!-- Title Section -->
+  <input type="text" id="title" name="titleInput" placeholder="Enter a title that is between 10 and 150 characters long." oninput="validateTitle()">  <br>
+  
+  <!-- Article Body Section -->
+  <label for="textInput">Article Body:</label>
+  <!-- Label to denote the lower and upper limit of text input -->
+  <div id="wordCountDisplay"> Min: 20, Max: 100 (words)</div>
+  <br>
+  <textarea id="body" name="textInput" rows="10" cols="50" placeholder="Type up to 100 words, there's a counter that gets updated automatically. When the word count reaches 100, you can't type any more text (though you can still delete)." oninput="validateWordCount()"></textarea>
+  <br>
+
+  <!-- Hashtag List element -->
+  <label for="tagsInput">Tags:</label>
+  <br>
+  <input type="text" id="tags" name="tagsInput" placeholder="Add tags by listing them separately, non-tagged words will be ignored." oninput="extractTags()">
+  <br>
+  <label id="tags_lbl" style="color: rgb(199, 115, 56);"></label>
+  
+  <label id="user_lbl"  for="user_id">User ID:</label>
+  <br>
+  <input type="number" min="1" id="userId" name="user_id" placeholder="Enter your user ID" oninput="checkValue()" >
+  <br>
+
+  <!-- Drop-down list of possible directories on the server -->
+  <div class="dropdown" > 
+    <label for="Article" id="dir_lbl">Article Directory:</label>
+    <div id="myDropdown" class="list_content" >
+      <input type="number" min="1" placeholder="Look for an available webpage on  website." id="webpage" onkeyup="filterFunction()">
+      <div class="option" onclick="selectItem(this)">1</div>
+      <div class="option" onclick="selectItem(this)">2</div>
+      <div class="option" onclick="selectItem(this)">3</div>
+      <div class="option" onclick="selectItem(this)">4</div>
+  </div>
+  </div> 
+  <!-- Form submission button -->
+  <div class="button-container">
+  <button id="formbutton" type="submit" >Publish</button>
+  </div>
+</form>
+
+<!-- Footer Section -->
+<footer>
+               	<div id="footer_placeholder"></div>
+
+</footer>
+
+
+</body>
+</html>

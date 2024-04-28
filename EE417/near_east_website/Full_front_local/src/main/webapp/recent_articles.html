@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Articles</title>
+    <link rel="stylesheet" href="css/Generic.css">
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+/* General Stlying for the body secion */
+        .body-section {
+            font-family:Georgia, 'Times New Roman', Times, serif;   
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 20px 20px 0 0  auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 20px 0 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            margin:  auto;
+            margin-bottom: 30px ;
+
+        }
+/* Other Articles Side View Formatting */
+        .recent-articles {
+            margin-left: 20px;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-color: #f3f3f3;
+            padding: 10px;
+        }
+
+        .article-list {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the articles horizontally */
+        }
+
+        .article-row {
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            width: 95%; /*  width = 95% */
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #ddd;
+            background-color: #fff;
+
+        }
+
+        .article-headline{
+        padding: 10px;
+
+        }
+
+        .article-box:hover {
+            transform: scale(1.05);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 150px; 
+            object-fit: cover; 
+        }
+
+        .article-headline {
+            font-family:Arial, sans-serif;   
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+
+        }
+
+        article {
+            width: 70%;
+            margin: 20px auto; 
+        }
+/* Main Title for Article */
+        .headline {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+/* Name of Writer */
+        .written-by {
+            font-size: 14px;
+            color: #555;
+            font-style: italic; 
+        }
+
+        .share-button {
+            color: #000000;
+            text-align: center;
+            display: inline-block; 
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgb(136, 136, 136,0.4); 
+            margin-left: 20px;
+        }
+        .share-button:hover {
+            color: #000000;
+            background-color: #CB7338;
+            text-align: center;
+        }
+/* Main Article Front Image */
+        .headline-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .paragraph-introduction {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .smaller-headline {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .additional-paragraph {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script src="js/logged_in.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/side_menu.js"></script>
+</head>
+<body>
+
+   <div id="menu_placeholder"></div>
+   <header>
+
+  	<div id="header_placeholder"></div>
+
+    </header>
+    <div class="body-section">
+<!-- Featured Article in the Articles page -->
+        <article>
+            <div class="headline">From Ruins to Reinvigoration: Preserving the Legacy of Beit Ed-Dine</div>
+            <div class="written-by">Written by: Muddar Ghaddar
+                <div class="share-button">Share</div>
+                <br>Published on 06/01/2024 
+        </div>
+            
+            <img src="images/beit_eddin_main.JPG" alt="Headline Image" class="headline-image">
+<!-- Different Paragraphs -->
+            <p class="paragraph-introduction">
+                The Lebanese Civil War (1975-1990) not only left scars on the nation's social and political landscape but also inflicted irreparable 
+                damage on its cultural heritage. This article delves into the tragic narrative of historical sites that 
+                fell victim to the destructive forces unleashed during those tumultuous years.
+            </p>
+
+            <div class="smaller-headline"> Beit Ed-Dine Palace: A Jewel of Lebanese Architecture:</div>
+            <p class="additional-paragraph">
+                The Lebanese Civil War (1975-1990) left an indelible mark on the nation's cultural heritage, claiming numerous historical treasures as 
+                casualties of conflict. Among these tragic losses stands the once-majestic Beit Ed-Dine Palace, a symbol of Lebanon's rich architectural 
+                and cultural legacy. This article delves into the specific events that led to the destruction of Beit Ed-Dine Palace, 
+                exploring its historical significance, the devastation it faced, and the ongoing efforts to preserve its memory.            </p>
+            <img src="images/beit_eddin.JPG" alt="Headline Image" class="headline-image">
+            <div class="smaller-headline">Aftermath: The Ruins and Preservation Challenges</div>
+            <p class="additional-paragraph">
+                The end of the Civil War brought a sobering realization of the extent of damage inflicted upon Beit Ed-Dine Palace. 
+                Its once-glorious halls lay in ruins, presenting a formidable challenge for preservationists and historians. 
+                The aftermath demanded a delicate balance between rebuilding and preserving the scars of conflict.            </p>
+
+            <div class="smaller-headline">Reconstruction Efforts: Piecing Together a Shattered Legacy</div>
+            <p class="additional-paragraph">
+                In the years following the Civil War, initiatives emerged to reconstruct parts of Beit Ed-Dine Palace. While efforts were made to restore some of its former glory,
+                the wounds of war remained evident,
+                serving as a testament to the resilience of both the palace and the nation.
+                The tragic loss of Beit Ed-Dine Palace during the Lebanese Civil War remains etched in the collective memory of the nation. 
+                This emblematic structure, once a testament to Lebanon's cultural grandeur, now serves as a solemn reminder of the urgent need to protect and cherish the 
+                treasures that bind a nation to its past. 
+                In remembering Beit Ed-Dine, we honor not only the palace itself but the resilience of a people determined to safeguard their heritage amidst the chaos of war.            </p>
+        </article>
+<!-- Other Articles Secion -->
+        <div class="recent-articles">
+            <ul class="article-list"><h2>Recent Articles</h2> 
+                <li class="article-row">
+                    <a href="gallery.html"><img src="images/stolen.jpg" alt="Article 1 Image" class="article-image">
+                    <div class="article-headline">Echoes of Destruction: Photos of the Aftermath in Iraq's Looted Sites</div></a>
+                </li>
+                <li class="article-row">
+                    <a href=semitic.html><img src="images/sem.jpg" alt="Article 2 Image" class="article-image">
+                    <div class="article-headline">Decoding Ancestral Echoes: Understanding the Classifications and Proto-Semitic Roots of Modern Semitic Languages</div></a>
+                </li>
+                <li class="article-row">
+                   <a href="alpha.html"><img src="images/phoenician.JPG" alt="Article 3 Image" class="article-image">
+                    <div class="article-headline">Trading Letters: How the Phoenicians Gave Us the Alphabet We Use Today</div></a>
+                </li>
+                <li class="article-row">
+                    <a href="east-mid.html"><img src="images/amorite.jpg" alt="Article 4 Image" class="article-image">
+                    <div class="article-headline">Where Civilizations Collide: A Tapestry of Cultural Evolution in the Fertile Crescent</div></a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+           	<div id="footer_placeholder"></div>
+
+    </footer>
+
+</body>
+</html>

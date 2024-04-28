@@ -1,0 +1,158 @@
+@font-face {
+            font-family: "Trajan";
+            src: url("TrajanPro-Bold.otf");
+        }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/dam.jpg');
+
+}
+
+
+#login{
+	margin-top:-130px;
+	
+}
+#signuplbl{
+	
+		margin-top:-60px;
+	
+	
+}
+/* Container uses auto margin and cover to keep the entire background image covered by the container */
+.container {
+    max-width: 1600px;
+    min-height: 190vh; 
+    width: 100%;
+    margin: 0 auto;
+    margin-top:-45vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background-size: cover; 
+}
+/* Define Form Dimensions */
+.container form {
+    margin-right:130px;
+    max-width: 400px;
+    width: 100%; /* Make the form container take the full width of its parent */
+    padding: 20px; /* Add padding for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff
+}
+/* For formatting Form Labels */
+label {
+    margin-top: 10px;
+}
+/* Button Formatting */
+.container input,
+.container button {
+    margin-top: 10px;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%; /* Width=100% */
+}
+
+button {
+    max-width: 200px;
+    background-color: #CB7338;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-required::after {
+    content: " * required field";
+    color: red;
+}
+
+.error-message{
+display: block;
+color: red;
+margin: 20px;
+font-size: 20px;
+/* font-weight: bold; */
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+position: absolute;
+margin-top: 890px;
+
+}
+
+
+.signup_here{
+	margin-top:50px;
+	font-size:23px;
+	font-family:'Trajan', sans-serif;
+    font-weight: bold;
+    text-align:center;
+    margin-left:10px;
+    
+}
+#sign_up {
+		padding:4px;
+		background-color:#ffffd0;
+		color:  #CB7338;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.4   ); /* This has opacity set as 04 */
+	    text-decoration: none;
+	    width: 200px;
+	    line-height: 31px;
+	    border-radius: 30px;
+	
+	
+	
+}
+#sign_up:hover {
+    background-color: #bc0909;
+    color: white;
+}
+
+select {
+    appearance: none; /* Remove default styles on some browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+select option {
+    padding: 8px;
+    background-color: #fff;
+}
+
+select option:hover {
+    background-color: #f0f0f0;
+
+}
+
+
+
+
+

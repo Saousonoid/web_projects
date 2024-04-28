@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Create an Account </title>
+    <link rel="stylesheet" href="css/Generic.css">
+<!-- Specific Styling for Forms (Sign up and login) -->
+    <link rel="stylesheet" href="css/sign.css">
+</head>
+<body>
+
+ 
+    <header>
+  
+        
+  <!-- Search bar with decorations-->
+        <div class="main_header">
+  <!-- Sign up and Login pages-->
+        <div class="logo" style="text-align: center;  margin-right: auto;margin-left: auto; left:0; right:0;">
+            <a href="#">
+                <img src="images/Logo.png"  alt="Website Icon">
+            </a>
+        </div>
+    </div>
+    </header>
+    
+    <div class="container">
+        <h1 id="signuplbl">Sign Up</h1>
+<!-- Signup information -->
+        <form id="registrationForm" method="POST" onsubmit="validateForm(event)">
+    <label id="firstName_lbl" for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName">
+
+    <label id="lastName_lbl" for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName">
+
+    <label id="username_lbl" for="username">Username:</label>
+    <input type="text" id="username" name="username">
+
+    <label id="email_lbl" for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label id="password_lbl" for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <label id="confirmPassword_lbl" for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+
+    <label id="phone_lbl" for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone">
+
+    <label id="role_lbl" for="role">Account Type (Role):</label>
+    <select id="role" name="role">
+        <!-- Role as a visitor of the website -->
+        <option value="" style="color: rgb(10, 120, 100);">Please Select a Type for Your Account</option>
+        <option value=1>User</option>
+        <option value=2>Admin</option>
+        <option value=3>Writer</option>
+        <option value=4>Premium User</option>
+        
+    </select>
+
+    <button type="submit">Sign Up</button>
+    <div class="signup_here"><a href="login.html" style="color:#CB7338;">Back to Login</a></div>
+    
+    <!-- Error Prompt -->
+    <div class="error-message" id="mainError"></div>
+</form>
+
+    </div>
+    <footer>
+       
+<!-- Socials -->
+        <div class="social-section">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.x.com" target="_blank"><img src="images/x.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/" target="_blank" ><img src="images/youtube.png" alt="YouTube"></a>
+        </div>
+<!-- Copyright section -->
+        <div class="copyright-section">
+            <p>&copy; 2024 Near East Heritage Hub</p>
+        </div>
+    </footer>
+    <script src="js/sign_up.js"></script>
+    <script src="js/side_menu.js"></script>
+</body>
+</html>

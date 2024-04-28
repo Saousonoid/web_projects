@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/Generic.css">
+  <link rel="stylesheet" href="css/articles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="js/article_details.js"></script>
+  <script src="js/logged_in.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/side_menu.js"></script>
+   <script src="js/getRole.js"></script>
+  
+  <script>
+  // Only Admin can access this page
+
+  blacklist=new Set(["WRITER","PREMIUM","USER"]);
+  getRole(blacklist);
+
+  </script>
+
+  <style>
+    
+  </style>
+</head>
+<body>
+<div id="menu_placeholder"></div>
+   <header>
+
+  	<div id="header_placeholder"></div>
+
+    </header>
+    <!-- Look up all articles with details on publisher-->
+  <form id="ArticleForm">    Article Archives
+  
+<div id="ArticleJSON"></div>
+    
+    <div class="button-container">
+  <button id="formbutton" type="submit" >Search</button>
+  </div>
+</form>
+<!-- Footer Section -->
+<footer>
+                   	<div id="footer_placeholder"></div>
+
+</footer>
+
+</body>
+</html>

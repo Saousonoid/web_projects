@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Gallery </title>
+    <link rel="stylesheet" href="css/Generic.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+	<script src="js/logged_in.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/side_menu.js"></script>
+</head>
+<body>
+    <div id="menu_placeholder"></div>
+   <header>
+
+  	<div id="header_placeholder"></div>
+
+    </header>
+    
+<style>
+/* Simple Image Rows and Columns (4 Rows, 3 Columns)  */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery-section {
+        display: grid; /* Assign images to a grid of rows and columns */
+        grid-template-columns: repeat(3, 1fr); /* 3 elements per row*/
+        grid-gap: 10px;
+        width: 90%;
+        height: 1500px;
+        padding: 20px;
+        background-color: white;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .gallery-title {
+        grid-column: span 3; /*how many columns =4 */
+        text-align: left;
+        font-size: 60px;
+        font-weight: bold; /* Make title bold */
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding:40px;
+        background: url(images/strip.png)  ; /* This title uses a background of unique patterns */
+        
+
+    }
+
+    .gallery-image {
+        width: 100%;
+        height: 300px;
+        border-radius: 2px;
+        border: 5px solid #000; /* Add border style */
+        box-sizing: border-box; /* Include border in element size */
+    }
+</style>
+    </style>
+    <title>Image Gallery</title>
+</head>
+<body>
+<!-- Images -->
+    <div class="gallery-section">
+        <div class="gallery-title">Gallery</div>
+        <img src="images/1.jpg" alt="Image 1" class="gallery-image">
+        <img src="images/2.jpg" alt="Image 2" class="gallery-image">
+        <img src="images/mosaic.jpg" alt="Image 3" class="gallery-image">
+        <img src="images/ishtar.jpg" alt="Image 4" class="gallery-image">
+        <img src="images/back.jpg" alt="Image 5" class="gallery-image">
+        <img src="images/baalbek.jpg" alt="Image 6" class="gallery-image">
+        <img src="images/amorite.jpg" alt="Image 7" class="gallery-image">
+        <img src="images/ugarit.jpg" alt="Image 8" class="gallery-image">
+        <img src="images/palm.jpg" alt="Image 9" class="gallery-image">
+        <img src="images/palm_dest.jpg" alt="Image 10" class="gallery-image">
+        <img src="images/lamas.jpg" alt="Image 11" class="gallery-image">
+        <img src="images/hira.jpg" alt="Image 12" class="gallery-image">
+    </div>
+</body>
+
+<footer>
+                  	<div id="footer_placeholder"></div>
+
+</footer>
+</body>
+</html>
