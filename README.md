@@ -1,2 +1,2 @@
 # web_projects
-Complete Web Applications Using frontend and backend MVC (Spring, Laravel)
+Complete Web Applications Using frontend (HTML, CSS, JavaScript) and backend MVC (Spring)
